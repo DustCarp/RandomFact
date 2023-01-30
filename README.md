@@ -3,19 +3,18 @@ A selector that presents a picture and information about a selection of courses 
 
 **Link to project: https://fun-fact-generator.netlify.app/
 
-![alt tag](http://placecorgi.com/1200/650)
+
 
 ## How It's Made:
 
 **Tech used:** HTML, CSS, JavaScript
 
-I built this using some HTML and CSS for content and appearance. I then used a set of event listeners and functions in JavaScript to make the information appear given a click. 
+I built this using an API I accessed using JavaScript. I then used HTML and CSS to make the information appear nicely on screen. 
 
 
 ## Lessons Learned:
 
-I learned a lot about backgrounds and borders in CSS while making this application.
-
+I lerarned a great deal about APIs during this build. 
 
 
 
