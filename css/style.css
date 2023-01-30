@@ -1,0 +1,162 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+body{
+  width: 100%;
+  height: 100%;
+  background-image: url(https://th.bing.com/th/id/R.bbe7cd18619444794e45c490042d8cce?rik=3A5bLx%2bMsq1rfw&riu=http%3a%2f%2fi0.kym-cdn.com%2fphotos%2fimages%2foriginal%2f000%2f981%2f601%2f71d.png&ehk=LZOUMwioZl%2f5HnJ46y%2frufGArV7DrKluqS5nHgwt2%2bU%3d&risl=&pid=ImgRaw&r=0);
+  background-repeat:repeat-y;
+  background-position: center;
+  background-size:cover;
+  color: white;
+  display: flex;
+
+}
+section{
+  width:80%;
+  height: 40em;
+  margin: 10em 10%;
+  display: flex;
+  flex-direction: column;
+  
+  /*This CSS can make the edges of a section rounded and appear more 3d*/
+  background-color: rgba(67,70,75, 0.80);
+  box-shadow:
+  rgba(22, 31, 39, 0.42) 0px 60px 123px -25px,
+  rgba(19, 26, 32, 0.08) 0px 35px 75px -35px;
+  border-radius: 2em;
+  border: .5em solid;
+  border-color:rgb(213, 220, 226),rgb(213, 220, 226),rgb(184, 194, 204);
+}
+h1{
+  font-size: 3em;
+  text-align: center;
+  margin: 0;
+  margin-top: 10%;
+}
+span {
+  font-size: 1.5em;
+  width: 100%;
+  text-align: center;
+}
+h2{
+  font-size: 2em;
+  text-align: center;
+  width: 80%;
+  margin: 0 10%;
+ 
+}
+
+button{
+  align-self: center;
+  color: white;
+  font-size: 1.5em;
+  margin: 1em 0;
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  border: 10px solid #990000; 
+  background: rgb(255,0,0);
+  background: radial-gradient(circle, rgba(255,0,0,1) 0%, rgba(148,27,27,0.9976365546218487) 100%);
+  transition: 1s;
+}
+button:hover {
+  background: rgb(121,0,0);
+  background: radial-gradient(circle, rgba(121,0,0,1) 0%, rgba(59,10,10,0.9976365546218487) 100%);
+  transition: 1s;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+
+
+
+/*IPhone 4*/
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    section {
+      height: 80em;
+    }
+    h1{
+      font-size: 5em;
+    }
+    span{
+      font-size: 3em;
+    }
+    button{
+      height: 5em;
+      width: 5em;
+      font-size: 3em;
+    }
+    h2{
+      font-size: 3em;
+    }
+}
+
+
+/*Iphone XPortrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+    section {
+      height: 100em;
+    }
+    h1{
+      font-size: 5em;
+    }
+    span{
+      font-size: 3em;
+      padding-bottom: 2em;
+    }
+    button{
+      height: 5em;
+      width: 5em;
+      font-size: 3em;
+    }
+    h2{
+      font-size: 3.5em;
+    }
+}
+
+
+/*Ipad Portrait and Landscape*/
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    section {
+      height: 65em;
+    }
+    h1{
+      font-size: 4em;
+    }
+    span{
+      font-size: 2em;
+      padding-bottom: 2em;
+    }
+    button{
+      height: 5em;
+      width: 5em;
+      font-size: 3em;
+    }
+    h2{
+      font-size: 2.5em;
+    }
+}
